@@ -19,4 +19,4 @@ with open(path, 'rb') as f:
     while (len_to_write - written_len > 4096):
         f.write(text[seek:seek+4096])
         written_len += 4096
-    to_.write(text[seek: len(text-1)])
+    f.write(text[seek: len(text-1)])
